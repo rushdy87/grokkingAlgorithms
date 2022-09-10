@@ -1,0 +1,10 @@
+How memory works?
+  Each time you want to store an item in memory, you ask the computer for some space, and it gives you 
+  an address where you can store your item.
+
+Arrays and linked lists:
+  Using an array means all your tasks are stored contiguously (right next to each other) in memory.
+  With linked lists, your items can be anywhere in memory.
+  Here are the run times for common operations on arrays and lists:
+  Arrays          =>    reading: O(1), Insertion: O(n), Deletions: O(n).
+  Linked Lists    =>    reading: O(n), Insertion: O(1), Deletions: O(1).
