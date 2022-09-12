@@ -1,0 +1,20 @@
+Divide And Conquer 
+This technique can be divided into the following three parts:
+  1- Divide: This involves dividing the problem into smaller sub-problems.
+  2- Conquer: Solve sub-problems by calling recursively until solved.
+  3- Combine: Combine the sub-problems to get the final solution of the whole problem.
+________________________________________________________________________________________
+    When you’re writing a recursive function involving an array, the base case is often 
+    an empty array or an array with one element. If you’re stuck, try that first.
+________________________________________________________________________________________
+Quicksort is unique because its speed depends on the pivot you choose.
+________________________________________________________________________________________
+Recap
+• D&C works by breaking a problem down into smaller and smaller pieces. If you’re using 
+  D&C on a list, the base case is probably an empty array or an array with one element.
+• If you’re implementing quicksort, choose a random element as the pivot. The average 
+  runtime of quicksort is O(n log n)!
+• The constant in Big O notation can matter sometimes. That’s why quicksort is faster than 
+  merge sort.
+• The constant almost never matters for simple search versus binary search, because O(log n)
+  is so much faster than O(n) when your list gets big.
