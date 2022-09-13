@@ -1,0 +1,5 @@
+Hash Tables are a data structure that allow you to create a list of paired values. You can then retrieve a certain 
+value by using the key for that value, which you put into the table beforehand.
+
+A Hash Table transforms a key into an integer index using a hash function, and the index will decide where to store 
+the key/value pair in memory.
