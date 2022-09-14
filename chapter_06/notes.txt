@@ -1,0 +1,41 @@
+What is a graph?
+  - A graph models a set of connections.
+  - A Graph is a non-linear data structure consisting of vertices and edges. The vertices are sometimes 
+    also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph. More 
+    formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by 
+    G(E, V).
+  - Components of a Graph:
+    Vertices: Vertices are the fundamental units of the graph. Sometimes, vertices are also known as vertex 
+              or nodes. Every node/vertex can be labeled or unlabelled.
+    Edges:    Edges are drawn or used to connect two nodes of the graph. It can be ordered pair of nodes in a 
+              directed graph. Edges can connect any two nodes in any possible way. There are no rules. Sometimes, 
+              edges are also known as arcs. Every edge can be labeled/unlabelled.
+_________________________________________________________________________________________________________________
+Breadth-first search
+  - Breadth- first search is a different kind of search algorithm: one that runs on graphs. It can help answer 
+    two types of questions:
+    * Question type 1: Is there a path from node A to node B?
+    * Question type 2: What is the shortest path from node A to node B?
+_________________________________________________________________________________________________________________
+Queues:
+  - Queues are similar to stacks. You can’t access random elements in the queue. Instead, there are two only 
+    operations, enqueue and dequeue.
+  - If you enqueue two items to the list, the first item you added will be dequeued before the second item.
+  - The queue is called a FIFO data structure: First In, First Out.
+    In contrast, a stack is a LIFO data structure: Last In, First Out.
+
+_________________________________________________________________________________________________________________
+Recap
+• Breadth-first search tells you if there’s a path from A to B.
+• If there’s a path, breadth-first search will find the shortest path.
+• If you have a problem like “find the shortest X,” try modeling your problem as a graph, and use breadth-first 
+  search to solve.
+• A directed graph has arrows, and the relationship follows the direction of the arrow (rama -> adit means “rama 
+  owes adit money”).
+• Undirected graphs don’t have arrows, and the relationship goes both ways (ross - rachel means “ross dated rachel 
+  and rachel dated ross”).
+• Queues are FIFO (First In, First Out).
+• Stacks are LIFO (Last In, First Out).
+• You need to check people in the order they were added to the search list, so the search list needs to be a queue. 
+  Otherwise, you won’t get the shortest path.
+• Once you check someone, make sure you don’t check them again. Otherwise, you might end up in an infinite loop.
