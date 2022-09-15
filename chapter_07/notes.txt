@@ -1,0 +1,35 @@
+- each edge in the graph has a number associated with it. These are called weights.
+- A graph with weights is called a weighted graph. A graph without weights is called 
+  an unweighted graph.
+- To calculate the shortest path in an unweighted graph, use breadth-first search. To 
+  calculate the shortest path in a weighted graph, use Dijkstra’s algorithm. Graphs can 
+  also have cycles.
+________________________________________________________________________________________
+Dijkstra's Algorithm
+The Dijkstra algorithm is an algorithm used to solve the shortest path problem in a graph. 
+This means that given a number of nodes and the edges between them as well as the “length” 
+of the edges (referred to as “weight”), the Dijkstra algorithm is finds the shortest path 
+from the specified start node to all other nodes. Nodes are sometimes referred to as vertices 
+(plural of vertex) - here, we’ll call them nodes.
+
+Description of the Algorithm
+The basic principle behind the Dijkstra algorithm is to iteratively look at the node with the 
+currently smallest distance to the source and update all not yet visited neighbors if the path 
+to it via the current node is shorter. In more detail, this leads to the following Steps:
+  1- Initialize the distance to the starting node as 0 and the distances to all other nodes as infinite
+  2- Set all nodes to “unvisited”
+  3- While we haven’t visited all nodes:
+    -Find the node with currently shortest distance from the source (for the first pass, 
+      this will be the source node itself)
+    - For all nodes next to it that we haven’t visited yet, check if the currently smallest 
+      distance to that neighbor is bigger than if we were to go via the current node
+    - If it is, update the smallest distance of that neighbor to be the distance from the source 
+      to the current node plus the distance from the current node to that neighbor
+In the end, the array we used to keep track of the currently shortest distance from the source to 
+all other nodes will contain the (final) shortest distances.
+________________________________________________________________________________________
+Recap
+• Breadth-first search is used to calculate the shortest path for an unweighted graph.
+• Dijkstra’s algorithm is used to calculate the shortest path for a weighted graph.
+• Dijkstra’s algorithm works when all the weights are positive.
+• If you have negative weights, use the Bellman-Ford algorithm.
