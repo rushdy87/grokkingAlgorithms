@@ -1,0 +1,14 @@
+K-Nearest Neighbours (KNN)
+  - K-Nearest Neighbours is one of the most basic yet essential classification algorithms 
+  in Machine Learning. It belongs to the supervised learning domain and finds intense 
+  application in pattern recognition, data mining and intrusion detection.
+
+  - Suppose you’re Netflix, and you want to build a movie recommendations system for your 
+  users.
+  - Recap
+    • KNN is used for classification and regression and involves looking at the k-nearest neighbors.
+    • Classification = categorization into a group.
+    • Regression = predicting a response (like a number).
+    • Feature extraction means converting an item (like a fruit or a user) into a list of numbers 
+      that can be compared.
+    • Picking good features is an important part of a successful KNN algorithm.
